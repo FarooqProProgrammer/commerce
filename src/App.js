@@ -1,19 +1,18 @@
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import './App.css';
-import Display from './screens/Display';
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import Add from './screens/Add';
-import delete from './screens/delete';
+
+import Header from './screens/Header';
+
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-          <Route path='/' element={<Display/>}/>
-          <Route path='/Add' element={<Add/>}/>
-          
-      </Routes>
-    </BrowserRouter>
+   <BrowserRouter>
+    <Header/>
+    <Routes>
+      <Route />
+    </Routes>
+   </BrowserRouter>
   );
 }
 
